@@ -1,0 +1,12 @@
+.benefits-theme {
+  --color-primary: #0a2a5b;
+  --color-background-light: #f0f2f5;
+  --color-background-dark: #101922;
+  --color-accent-green: #00d97e;
+  --text-dark: #1D2939;
+  --font-display: Inter, sans-serif;
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
