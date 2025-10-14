@@ -1,6 +1,12 @@
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.jpg"
+import { useTheme } from "../context/ThemeContext"
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme()
+
+  const handleToggleTheme = () => {
+    toggleTheme()
+  }
   return (
     <header className="shadow-md sticky top-0 z-50 bg-primary">
       <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2">
@@ -14,7 +20,11 @@ const Navbar = () => {
           {[
             { href: "#beneficios", icon: "savings", label: "Beneficios" },
             { href: "#casos-exito", icon: "star", label: "Casos de Éxito" },
-            { href: "#como-trabajamos", icon: "rocket_launch", label: "Cómo Trabajamos" },
+            {
+              href: "#como-trabajamos",
+              icon: "rocket_launch",
+              label: "Cómo Trabajamos",
+            },
             { href: "#servicios", icon: "insights", label: "Servicios" },
             { href: "#contacto", icon: "mail", label: "Contacto" },
           ].map((item) => (
@@ -23,14 +33,29 @@ const Navbar = () => {
               href={item.href}
               className="flex items-center gap-1 px-3 py-2 rounded-lg text-white font-semibold hover:bg-primary/80 transition"
             >
-              <span className="material-symbols-outlined text-lg">{item.icon}</span>
+              <span className="material-symbols-outlined text-lg">
+                {item.icon}
+              </span>
               {item.label}
             </a>
           ))}
+          <button
+            onClick={handleToggleTheme}
+            className="ml-2 p-2 rounded-lg hover:bg-white/10 transition"
+            title={
+              theme === "dark"
+                ? "Cambiar a modo claro"
+                : "Cambiar a modo oscuro"
+            }
+          >
+            <span className="material-symbols-outlined text-white text-lg">
+              {theme === "dark" ? "brightness_4" : "dark_mode"}
+            </span>
+          </button>
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
