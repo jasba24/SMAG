@@ -20,7 +20,7 @@ const Benefits = () => {
   ]
 
   return (
-    <div className="benefits-theme px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-10 md:py-20">
+    <div id="beneficios" className="benefits-theme px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-10 md:py-20">
       <div className="layout-content-container flex flex-col max-w-[960px] flex-1 gap-8">
         <div className="text-center">
           <h2 className="text-primary dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">
