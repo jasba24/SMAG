@@ -12,11 +12,11 @@ const Navbar = () => {
 
         <div className="flex flex-wrap gap-2 md:gap-4">
           {[
-            { href: "/beneficios", icon: "savings", label: "Beneficios" },
-            { href: "/casos-exito", icon: "star", label: "Casos de Éxito" },
-            { href: "/como-trabajamos", icon: "rocket_launch", label: "Cómo Trabajamos" },
-            { href: "/servicios", icon: "insights", label: "Servicios" },
-            { href: "/contacto", icon: "mail", label: "Contacto" },
+            { href: "#beneficios", icon: "savings", label: "Beneficios" },
+            { href: "#casos-exito", icon: "star", label: "Casos de Éxito" },
+            { href: "#como-trabajamos", icon: "rocket_launch", label: "Cómo Trabajamos" },
+            { href: "#servicios", icon: "insights", label: "Servicios" },
+            { href: "#contacto", icon: "mail", label: "Contacto" },
           ].map((item) => (
             <a
               key={item.label}
