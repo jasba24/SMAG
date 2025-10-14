@@ -60,7 +60,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div>
+        <div className="flex sm:flex-col">
           <label
             htmlFor="mensaje"
             className="pb-2 text-base font-medium text-text-dark dark:text-white"

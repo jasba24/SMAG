@@ -17,7 +17,7 @@ const ContactInfo = () => {
             href="mailto:ventas@ia-automation.com"
             className="text-[#4c779a] dark:text-slate-400 hover:text-primary dark:hover:text-primary"
           >
-            ventas@ia-automation.com
+            consultingsmag@gmail.com
           </a>
         </div>
         <div className="flex items-center justify-center gap-2">
@@ -26,7 +26,7 @@ const ContactInfo = () => {
             href="tel:+1234567890"
             className="text-[#4c779a] dark:text-slate-400 hover:text-primary dark:hover:text-primary"
           >
-            +1 (234) 567-890
+            +57 321 7986938
           </a>
         </div>
       </div>

@@ -20,10 +20,10 @@ const ChartComparison = () => (
     </div>
 
     <div className="grid grid-cols-2 gap-8 text-center -mt-2">
-      <p className="text-text-dark dark:text-gray-400 text-sm font-semibold tracking-[0.015em]">
+      <p className="text-text-dark dark:text-white text-sm font-semibold tracking-[0.015em]">
         Antes
       </p>
-      <p className="text-text-dark dark:text-gray-400 text-sm font-semibold tracking-[0.015em]">
+      <p className="text-text-dark dark:text-white text-sm font-semibold tracking-[0.015em]">
         Después
       </p>
     </div>

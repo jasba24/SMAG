@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* 🎨 Define tu tema personalizado */
 @theme {
   --color-primary: #0b1e39;
   --color-background-light: #f6f7f8;
   --color-background-dark: #101a22;
+  --color-accent-green: #00d97e;
   --font-display: Inter, sans-serif;
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
