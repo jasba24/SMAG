@@ -1,4 +1,26 @@
+import { useState } from "react"
+
 const ContactForm = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [company, setCompany] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const proyecto = {
+      name,
+      email,
+      company,
+      message
+    }
+    localStorage.setItem(company, JSON.stringify(proyecto))
+    setName('')
+    setEmail('')
+    setCompany('')
+    setMessage('')
+    alert('Consulta enviada. Nos pondremos en contacto contigo pronto.')
+  }
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-3">
@@ -24,7 +46,10 @@ const ContactForm = () => {
               id="nombre"
               type="text"
               placeholder="Nombre completo"
+              required
               className="h-12 rounded-lg border border-[#cfdde7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-3 text-base text-text-dark dark:text-white placeholder:text-[#4c779a] dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
             />
           </div>
         </div>
@@ -41,7 +66,10 @@ const ContactForm = () => {
               id="email"
               type="email"
               placeholder="nombre@ejemplo.com"
+              required
               className="h-12 rounded-lg border border-[#cfdde7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-3 text-base text-text-dark dark:text-white placeholder:text-[#4c779a] dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </div>
           <div className="flex flex-col flex-1">
@@ -55,7 +83,10 @@ const ContactForm = () => {
               id="empresa"
               type="text"
               placeholder="Nombre de la empresa"
+              required
               className="h-12 rounded-lg border border-[#cfdde7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-3 text-base text-text-dark dark:text-white placeholder:text-[#4c779a] dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              onChange={(e) => setCompany(e.target.value)}
+              value={company}
             />
           </div>
         </div>
@@ -71,12 +102,15 @@ const ContactForm = () => {
             id="mensaje"
             placeholder="Escribe tu mensaje aquí..."
             className="min-h-36 rounded-lg border border-[#cfdde7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-3 text-base text-text-dark dark:text-white placeholder:text-[#4c779a] dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
           />
         </div>
 
         <button
           type="submit"
-          className="flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-sm hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark"
+          className="flex items-center justify-center rounded-lg bg-slate-900 px-6 py-3 text-base font-bold text-white shadow-sm hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark cursor-pointer"
+          onClick={handleSubmit}
         >
           Enviar consulta
         </button>
