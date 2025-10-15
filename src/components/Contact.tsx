@@ -9,9 +9,7 @@ const Contact = () => {
         <div className="flex flex-1 justify-center py-10 lg:py-20">
           <div className="layout-content-container w-full max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-              {/* 🧩 Formulario de contacto */}
               <ContactForm />
-              {/* 🧩 Información + clientes */}
               <div className="flex flex-col justify-between gap-12 lg:pl-10">
                 <ContactInfo />
                 <ContactClients />

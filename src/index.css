@@ -4,13 +4,18 @@
 
 /* 🎨 Define tu tema personalizado */
 @theme {
-  --color-primary: #0b1e39;
+  --color-primary: #1B1E25;
   --color-background-light: #f6f7f8;
-  --color-background-dark: #101a22;
+  --color-background-dark: #1B1E25;
   --color-accent-green: #00d97e;
+  --color-accent-gray: #C2C5CA;
   --font-display: Inter, sans-serif;
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-full: 9999px;
+}
+
+button {
+  cursor: pointer;
 }

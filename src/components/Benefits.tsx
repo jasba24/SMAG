@@ -28,14 +28,12 @@ const Benefits = () => {
           </h2>
         </div>
 
-        {/* Beneficios */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {beneficios.map((b) => (
             <BenefitCard key={b.title} {...b} />
           ))}
         </div>
 
-        {/* Comparación */}
         <div className="flex flex-col lg:flex-row gap-8 items-center pt-10">
           <ChartComparison />
           <div className="flex flex-1 flex-col gap-6 items-center lg:items-start text-center lg:text-left">

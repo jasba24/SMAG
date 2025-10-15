@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import CaseSlide from "./successCases/CaseSlide"
-import TrustedCompanies from "./successCases/TrustedCompanies"
 
 type CarouselElement = HTMLDivElement
 
@@ -89,7 +88,6 @@ const SuccessCases = () => {
             ))}
           </div>
 
-          {/* Botones del carrusel */}
           <button
             onClick={() => scroll("prev")}
             className="absolute left-0 top-1/2 -translate-y-1/2 bg-slate-700/50 hover:bg-slate-600 transition-colors text-white p-2 rounded-full hidden md:block"
@@ -104,14 +102,11 @@ const SuccessCases = () => {
           </button>
         </div>
 
-        {/* CTA final */}
         <div className="flex justify-center py-6">
-          <button className="rounded-full h-14 px-8 bg-primary text-white font-bold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/30">
+          <button className="rounded-full h-14 px-8 bg-primary dark:bg-slate-900 text-white font-bold text-lg hover:bg-accent/90 transition-colors shadow-lg shadow-primary/30">
             Agenda tu Demo Personalizada
           </button>
         </div>
-
-        <TrustedCompanies />
       </div>
     </section>
   )
