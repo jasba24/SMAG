@@ -9,7 +9,7 @@ import Services from "./components/Services"
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+    <Navbar></Navbar>
       <Hero></Hero>
       <Benefits></Benefits>
       <SuccessCases></SuccessCases>

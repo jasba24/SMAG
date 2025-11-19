@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <section
       id="servicios"
-      className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light dark:bg-background-dark transition-colors duration-300"
+      className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light dark:bg-background-dark transition-colors duration-300 scroll-mt-40"
     >
       <div className="layout-container flex h-full grow flex-col">
         <div className="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-10 md:py-20">

@@ -34,7 +34,7 @@ const steps = [
 
 const HowWeWork = () => {
   return (
-    <section id="como-trabajamos" className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light dark:bg-background-dark transition-colors duration-300">
+    <section id="como-trabajamos" className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light dark:bg-background-dark transition-colors duration-300 scroll-mt-40">
       <div className="layout-container flex h-full grow flex-col">
         <div className="px-4 sm:px-6 lg:px-8 flex flex-1 justify-center py-12 md:py-20">
           <div className="layout-content-container flex flex-col max-w-6xl flex-1">

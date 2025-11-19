@@ -12,7 +12,7 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2">
         <div className="flex items-center gap-2">
           <a href="/">
-            <img src={logo} alt="SMAG Logo" className="h-32 my-2" />
+            <img src={logo} alt="SMAG Logo" className="h-32 my-2 shine-effect animate-shine-once" />
           </a>
         </div>
 

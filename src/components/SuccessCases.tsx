@@ -69,7 +69,7 @@ const SuccessCases = () => {
   return (
     <section
       id="casos-exito"
-      className="relative flex min-h-screen w-full flex-col items-center justify-center bg-background-dark py-12 md:py-24 px-4"
+      className="relative flex min-h-screen w-full flex-col items-center justify-center bg-background-dark py-12 md:py-24 px-4 scroll-mt-40"
     >
       <div className="max-w-6xl w-full flex flex-col gap-12">
         <div className="text-center">

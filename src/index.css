@@ -4,18 +4,55 @@
 
 /* 🎨 Define tu tema personalizado */
 @theme {
-  --color-primary: #1B1E25;
+  --color-primary: #0b0d19;
   --color-background-light: #f6f7f8;
-  --color-background-dark: #1B1E25;
+  --color-background-dark: #1b1e25;
   --color-accent-green: #00d97e;
-  --color-accent-gray: #C2C5CA;
+  --color-accent-gray: #c2c5ca;
   --font-display: Inter, sans-serif;
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-full: 9999px;
+
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 30%;
+    }
+  }
+
+  --animate-shine-once: shine 1.2s ease-in-out 1;
 }
 
 button {
   cursor: pointer;
+}
+
+.shine-effect {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.shine-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.animate-shine-once::before {
+  animation: var(--animate-shine-once);
 }
